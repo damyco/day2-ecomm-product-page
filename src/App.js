@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import SizeSelector from "./components/SizeSelector";
 import Button from "./components/Button";
 import ProductGallery from "./components/ProductGallery";
