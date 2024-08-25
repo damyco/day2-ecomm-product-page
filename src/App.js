@@ -26,19 +26,21 @@ const App = () => {
   ).toFixed(2);
 
   const handleAddToBag = () => {
-    console.log("added");
+   alert('Product added!')
   };
 
   return (
-    <main className="container h-screen w-screen flex items-center">
-      <div className="w-full  mx-auto p-6 flex gap-x-6 justify-center">
+    <main className="h-screen w-screen flex items-center merriweather-regular">
+      <div className="container mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-x-6 max-w-[850px]">
         <ProductGallery productData={productData} />
-        <div className="flex flex-col gap-y-3">
-          <p className="uppercase text-brandblue">{productData.category}</p>
+        <div className="flex flex-col gap-y-3 justify-between">
+          <p className="uppercase text-brandblue text-sm">
+            {productData.category}
+          </p>
           <h1 className="text-3xl font-semibold">{productData.name}</h1>
-          <p className="text-gray-600">{productData.description}</p>
-          <p className="text-xl">
-            {`$${discountedPrice}`} <span className="bg-blue">-25%</span>
+          <p className="text-gray-600 text-xs">{productData.description}</p>
+          <p className="text-2xl font-semibold">
+            {`$${discountedPrice}`} <span className="bg-brandblue-light text-sm text-brandblue font-semibold ml-2 rounded p-1">-25%</span>
           </p>
           <p className="line-through text-gray-400">{`$${productData.price.toFixed(
             2

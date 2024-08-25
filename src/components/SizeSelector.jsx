@@ -6,7 +6,7 @@ export default function SizeSelector({ availableSizes }) {
 
   return (
     <>
-      <p className="uppercase text-sm">Choose size</p>
+      <p className="uppercase text-sm font-semibold">Choose size</p>
       <div className="flex gap-x-3 text-sm">
         {availableSizes.map((size) => (
           <SizeSelectorButton
