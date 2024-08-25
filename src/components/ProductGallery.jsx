@@ -20,6 +20,7 @@ export default function ProductGallery({ productData }) {
           >
             <img
               src={image}
+              alt="Polo shirt image thumbnail"
               className="rounded object-cover max-h-[80px] lg:max-h-[120px]"
             />
           </button>
@@ -27,6 +28,7 @@ export default function ProductGallery({ productData }) {
       </div>
       <img
         src={selectedImage}
+        alt="Polo shirt image"
         className="rounded object-contain max-h-[400px] w-full lg:w-auto"
       />
     </div>
