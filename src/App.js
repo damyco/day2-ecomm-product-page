@@ -8,7 +8,6 @@ import frontImage from "./assets/images/products/polo/front.png";
 import sideImage from "./assets/images/products/polo/side.png";
 import backImage from "./assets/images/products/polo/back.png";
 
-
 const App = () => {
   const productData = {
     category: "Polo Ralph",
@@ -18,11 +17,8 @@ const App = () => {
     price: 132,
     discount: 0.25, // 25%
     availableSizes: ["s", "m", "l", "xl", "2xl"],
-    images: [frontImage,sideImage, backImage ],
-
+    images: [frontImage, sideImage, backImage],
   };
-
-
 
   const discountedPrice = (
     productData.price -

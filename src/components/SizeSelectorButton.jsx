@@ -10,7 +10,6 @@ export default function SizeSelectorButton({ onClick, selectedSize, size }) {
   );
 
   return (
-    
     <button onClick={onClick} className={styles}>
       {size}
     </button>
